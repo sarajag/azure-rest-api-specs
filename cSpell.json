@@ -1540,13 +1540,16 @@
             ]
         },
         {
-            "filename": "**/specification/confidentialledger/data-plane/Microsoft.CodeTransparency/preview/**/*.{json,tsp,yaml,md}",
+            "filename": "**/specification/confidentialledger/**/*.{json,tsp,yaml,md}",
             "words": [
                 "cbor",
                 "txids",
                 "operationid",
                 "scitt",
-                "pkix"
+                "pkix",
+                "codetransparency",
+                "mccfgov",
+                "identityservice"
             ]
         },
         {
