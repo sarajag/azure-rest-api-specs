@@ -1545,7 +1545,8 @@
                 "cbor",
                 "txids",
                 "operationid",
-                "scitt"
+                "scitt",
+                "pkix"
             ]
         },
         {
