@@ -1212,7 +1212,7 @@
         },
         "messageType": {
           "type": "string",
-          "description": "WhatsApp Message Type "
+          "description": "WhatsApp Message Type"
         },
         "media": {
           "$ref": "#/definitions/AcsMessageMediaContent",

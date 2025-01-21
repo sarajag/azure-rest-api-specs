@@ -1195,7 +1195,7 @@ model AcsMessageReceivedEventData extends AcsMessageEventData {
   channelType: AcsMessageChannelKind;
 
   /** The whatsapps message type */
-  messageType: AcsMessageChannelKind;
+  messageType: string;
 
   /** The received message media content */
   media?: AcsMessageMediaContent;
