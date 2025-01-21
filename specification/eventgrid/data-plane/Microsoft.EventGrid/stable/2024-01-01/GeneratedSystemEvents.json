@@ -1087,8 +1087,9 @@
         }
       },
       "required": [
-        "receivedTimeStamp",
-        "error"
+        "from",
+        "to",
+        "receivedTimeStamp"
       ]
     },
     "AcsMessageInteractiveButtonReplyContent": {
@@ -1123,12 +1124,7 @@
           "$ref": "#/definitions/AcsMessageInteractiveListReplyContent",
           "description": "The Message Sent when a customer selects an item from a list"
         }
-      },
-      "required": [
-        "type",
-        "buttonReply",
-        "listReply"
-      ]
+      }
     },
     "AcsMessageInteractiveListReplyContent": {
       "type": "object",
@@ -1174,7 +1170,11 @@
           "type": "boolean",
           "description": "Set to  true if the sticker is animated; false otherwise."
         }
-      }
+      },
+      "required": [
+        "mimeType",
+        "id"
+      ]
     },
     "AcsMessageReactionContent": {
       "type": "object",
@@ -1190,8 +1190,7 @@
         }
       },
       "required": [
-        "messageId",
-        "emoji"
+        "messageId"
       ]
     },
     "AcsMessageReceivedEventData": {
@@ -1201,6 +1200,10 @@
         "content": {
           "type": "string",
           "description": "The message content"
+        },
+        "messageId": {
+          "type": "string",
+          "description": "CPM Internal Message ID. Format will Guid as string. "
         },
         "channelType": {
           "$ref": "#/definitions/AcsMessageChannelKind",
@@ -1236,9 +1239,7 @@
       },
       "required": [
         "channelType",
-        "messageType",
-        "context",
-        "button"
+        "messageType"
       ],
       "allOf": [
         {

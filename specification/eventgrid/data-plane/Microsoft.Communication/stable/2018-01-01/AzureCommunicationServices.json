@@ -1548,6 +1548,10 @@
           "description": "The received message content",
           "type": "string"
         },
+        "messageId": {
+          "description": "CPM Internal Message ID. Format will Guid as string. ",
+          "type": "string"
+        },
         "channelType": {
           "description": "The received message channel Kind",
           "type": "string",
@@ -1600,9 +1604,7 @@
       },
       "required": [
         "channelType",
-        "messageType",
-        "context",
-        "button"
+        "messageType"
       ],
       "x-ms-examples": {
         "snapshotCreatedCloudEventsSchema": {
@@ -1712,7 +1714,12 @@
           "$ref": "#/definitions/AcsMessageChannelEventError",
           "type": "object"
         }
-      }
+      },
+      "required": [
+          "from",
+          "to",
+          "receivedTimestamp"
+        ]
     },
     "AcsChatThreadEventBaseProperties": {
       "description": "Schema of common properties of all chat thread events",
@@ -2253,7 +2260,11 @@
           "description": "Set to true if the sticker is animated; false otherwise.",
           "type": "boolean"
         }
-      }
+      },
+      "required": [
+        "mimeType",
+        "id"
+      ]
     },
     "AcsMessageReactionContent": {
       "description": "Message Reaction Content",
@@ -2267,7 +2278,10 @@
           "description": "Unicode escape sequence of the emoji.",
           "type": "string"
         }
-      }
+      },
+      "requried": [
+        "messageId"
+      ]
     },
     "AcsMessageContext": {
       "description": "Message Context",
