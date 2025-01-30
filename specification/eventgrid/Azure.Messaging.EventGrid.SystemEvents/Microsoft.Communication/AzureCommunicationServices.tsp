@@ -1188,7 +1188,6 @@ model AcsMessageReceivedEventData extends AcsMessageEventData {
   /** Optional. The message content */
   content?: string;
 
-  @added(ServiceApiVersions.v2025_02_01)
   /** Optional. Message ID. Format is Guid as string.  */
   messageId?: string;
 
@@ -1201,7 +1200,6 @@ model AcsMessageReceivedEventData extends AcsMessageEventData {
   /** Optional. The received message media content */
   media?: AcsMessageMediaContent;
 
-  @added(ServiceApiVersions.v2025_02_01)
   /** Optional. The received message reaction content */
   reaction?: AcsMessageReactionContent;
 
@@ -1229,19 +1227,15 @@ model AcsMessageMediaContent {
   /** Optional. The caption for the media object, if supported and provided */
   caption?: string;
 
-  @added(ServiceApiVersions.v2025_02_01)
   /** Optional. Set to  true  if the sticker is animated; false otherwise. */
   animated?: boolean;
 }
 
-@added(ServiceApiVersions.v2025_02_01)
 /** Message Reaction Content */
 model AcsMessageReactionContent {
-  @added(ServiceApiVersions.v2025_02_01)
   /** Required. WhatsApp message ID of message you want to apply the emoji to. */
   messageId: string;
 
-  @added(ServiceApiVersions.v2025_02_01)
   /** Optional. Unicode escape sequence of the emoji. */
   emoji?: string;
 }
