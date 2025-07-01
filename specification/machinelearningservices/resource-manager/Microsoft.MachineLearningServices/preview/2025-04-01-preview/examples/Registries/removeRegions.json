@@ -11,11 +11,14 @@
             "location": "string",
             "storageAccountDetails": [
               {
+<<<<<<< HEAD
                 "userCreatedStorageAccount": {
                   "armResourceId": {
                     "resourceId": "string"
                   }
                 },
+=======
+>>>>>>> upstream/main
                 "systemCreatedStorageAccount": {
                   "storageAccountName": "string",
                   "storageAccountType": "string",
@@ -29,11 +32,14 @@
             ],
             "acrDetails": [
               {
+<<<<<<< HEAD
                 "userCreatedAcrAccount": {
                   "armResourceId": {
                     "resourceId": "string"
                   }
                 },
+=======
+>>>>>>> upstream/main
                 "systemCreatedAcrAccount": {
                   "acrAccountName": "string",
                   "acrAccountSku": "string",
@@ -125,11 +131,14 @@
               "location": "string",
               "storageAccountDetails": [
                 {
+<<<<<<< HEAD
                   "userCreatedStorageAccount": {
                     "armResourceId": {
                       "resourceId": "string"
                     }
                   },
+=======
+>>>>>>> upstream/main
                   "systemCreatedStorageAccount": {
                     "storageAccountName": "string",
                     "storageAccountType": "string",
@@ -143,11 +152,14 @@
               ],
               "acrDetails": [
                 {
+<<<<<<< HEAD
                   "userCreatedAcrAccount": {
                     "armResourceId": {
                       "resourceId": "string"
                     }
                   },
+=======
+>>>>>>> upstream/main
                   "systemCreatedAcrAccount": {
                     "acrAccountName": "string",
                     "acrAccountSku": "string",
@@ -206,4 +218,7 @@
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main

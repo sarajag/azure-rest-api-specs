@@ -16347,13 +16347,21 @@
     },
     "ContentSafety": {
       "required": [
+<<<<<<< HEAD
         "contentSafetyLevel",
+=======
+>>>>>>> upstream/main
         "contentSafetyStatus"
       ],
       "type": "object",
       "properties": {
         "contentSafetyLevel": {
+<<<<<<< HEAD
           "description": "[Required] Specifies the current safety level for content safety.",
+=======
+          "description": "Specifies the current safety level for content safety.",
+          "default": "Blocking",
+>>>>>>> upstream/main
           "$ref": "#/definitions/ContentSafetyLevel"
         },
         "contentSafetyStatus": {
@@ -17241,6 +17249,26 @@
       },
       "additionalProperties": false
     },
+<<<<<<< HEAD
+=======
+    "DatasetReference": {
+      "description": "Dataset reference object.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the dataset reference.",
+          "type": "string",
+          "x-nullable": true
+        },
+        "id": {
+          "description": "The fully qualified ARM id of the dataset reference.",
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "additionalProperties": false
+    },
+>>>>>>> upstream/main
     "DataType": {
       "description": "Enum to determine the type of data.",
       "enum": [
@@ -20766,6 +20794,14 @@
         "scoringRoute": {
           "description": "The port to send the scoring requests to, within the inference server container.",
           "$ref": "#/definitions/Route"
+<<<<<<< HEAD
+=======
+        },
+        "startupRoute": {
+          "description": "The route to check the startup of the application in the container.",
+          "$ref": "#/definitions/Route",
+          "x-nullable": true
+>>>>>>> upstream/main
         }
       },
       "additionalProperties": false
@@ -22559,6 +22595,17 @@
           "description": "Stage in the model lifecycle assigned to this model",
           "type": "string",
           "x-nullable": true
+<<<<<<< HEAD
+=======
+        },
+        "datasets": {
+          "description": "Array of dataset references",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DatasetReference"
+          },
+          "x-nullable": true
+>>>>>>> upstream/main
         }
       },
       "x-ms-client-name": "ModelVersionProperties",
@@ -23686,6 +23733,14 @@
           "description": "Scale settings for the deployment.\r\nIf it is null or not provided,\r\nit defaults to TargetUtilizationScaleSettings for KubernetesOnlineDeployment\r\nand to DefaultScaleSettings for ManagedOnlineDeployment.",
           "$ref": "#/definitions/OnlineScaleSettings",
           "x-nullable": true
+<<<<<<< HEAD
+=======
+        },
+        "startupProbe": {
+          "description": "Startup probe verify whether an application within a container has started successfully.",
+          "$ref": "#/definitions/ProbeSettings",
+          "x-nullable": true
+>>>>>>> upstream/main
         }
       },
       "discriminator": "endpointComputeType",
@@ -27838,4 +27893,7 @@
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main

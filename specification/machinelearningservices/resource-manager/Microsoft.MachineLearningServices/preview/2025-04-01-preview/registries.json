@@ -88,10 +88,14 @@
         },
         "x-ms-examples": {
           "List registries with system created accounts.": {
+<<<<<<< HEAD
             "$ref": "./examples/Registries/list-SystemCreated.json"
           },
           "List registries with user created accounts.": {
             "$ref": "./examples/Registries/list-UserCreated.json"
+=======
+            "$ref": "./examples/Registries/list.json"
+>>>>>>> upstream/main
           }
         },
         "x-ms-pageable": {
@@ -207,10 +211,14 @@
         },
         "x-ms-examples": {
           "Get Registry with system created accounts.": {
+<<<<<<< HEAD
             "$ref": "./examples/Registries/get-SystemCreated.json"
           },
           "Get Registry with user created accounts.": {
             "$ref": "./examples/Registries/get-UserCreated.json"
+=======
+            "$ref": "./examples/Registries/get.json"
+>>>>>>> upstream/main
           }
         }
       },
@@ -265,10 +273,14 @@
         },
         "x-ms-examples": {
           "Update Registry with system created accounts.": {
+<<<<<<< HEAD
             "$ref": "./examples/Registries/update-SystemCreated.json"
           },
           "Update Registry with user created accounts.": {
             "$ref": "./examples/Registries/update-UserCreated.json"
+=======
+            "$ref": "./examples/Registries/update.json"
+>>>>>>> upstream/main
           }
         }
       },
@@ -329,10 +341,14 @@
         },
         "x-ms-examples": {
           "CreateOrUpdate Registry with system created accounts.": {
+<<<<<<< HEAD
             "$ref": "./examples/Registries/createOrUpdate-SystemCreated.json"
           },
           "CreateOrUpdate Registry with user created accounts.": {
             "$ref": "./examples/Registries/createOrUpdate-UserCreated.json"
+=======
+            "$ref": "./examples/Registries/createOrUpdate.json"
+>>>>>>> upstream/main
           }
         },
         "x-ms-long-running-operation": true,
@@ -433,11 +449,14 @@
           "description": "Details of system created ACR account to be used for the Registry",
           "$ref": "#/definitions/SystemCreatedAcrAccount",
           "x-nullable": true
+<<<<<<< HEAD
         },
         "userCreatedAcrAccount": {
           "description": "Details of user created ACR account to be used for the Registry",
           "$ref": "#/definitions/UserCreatedAcrAccount",
           "x-nullable": true
+=======
+>>>>>>> upstream/main
         }
       },
       "additionalProperties": false
@@ -804,11 +823,14 @@
           "description": "Details of system created storage account to be used for the registry",
           "$ref": "#/definitions/SystemCreatedStorageAccount",
           "x-nullable": true
+<<<<<<< HEAD
         },
         "userCreatedStorageAccount": {
           "description": "Details of user created storage account to be used for the registry",
           "$ref": "#/definitions/UserCreatedStorageAccount",
           "x-nullable": true
+=======
+>>>>>>> upstream/main
         }
       },
       "additionalProperties": false
@@ -862,6 +884,7 @@
         }
       },
       "additionalProperties": false
+<<<<<<< HEAD
     },
     "UserCreatedAcrAccount": {
       "type": "object",
@@ -884,6 +907,8 @@
         }
       },
       "additionalProperties": false
+=======
+>>>>>>> upstream/main
     }
   },
   "securityDefinitions": {
@@ -909,4 +934,7 @@
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
